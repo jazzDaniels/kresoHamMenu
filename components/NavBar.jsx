@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavItem from "./NavItem";
-
+import { FaBars, GrClose } from "react-icons/fa";
 const MENU_LIST = [
   { text: "Home", href: "/" },
   { text: "About Us", href: "/o-nama" },
@@ -17,9 +17,7 @@ const Navbar = () => {
           onClick={() => setNavActive(!navActive)}
           className={`nav__menu-bar`}
         >
-          <div></div>
-          <div></div>
-          <div></div>
+          <FaBars />
         </div>
         <div className={`${navActive ? "active" : ""} nav__menu-list`}>
           {MENU_LIST.map((menu, idx) => (
