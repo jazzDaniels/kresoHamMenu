@@ -13,7 +13,7 @@ export default function Submit() {
               id="name"
               name="name"
               type="text"
-              autocomplete="name"
+              autoComplete="name"
               required
             />
 
@@ -25,7 +25,7 @@ export default function Submit() {
               id="name"
               name="name"
               type="text"
-              autocomplete="name"
+              autoComplete="name"
               required
             />
             <label htmlFor="email" className="mb-2 italic">
@@ -36,7 +36,7 @@ export default function Submit() {
               id="name"
               name="name"
               type="text"
-              autocomplete="name"
+              autoComplete="name"
               required
             />
 
