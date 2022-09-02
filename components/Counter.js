@@ -4,7 +4,7 @@ function Counter() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="container my-5">
+    <div className="bg-slate-300 container my-5 mt-0">
       <div className="card text-center my-5">
         <div className="card-body">
           <h1 className="text-2xl">

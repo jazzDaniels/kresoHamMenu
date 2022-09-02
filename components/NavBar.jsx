@@ -5,6 +5,8 @@ const MENU_LIST = [
   { text: "Home", href: "/" },
   { text: "About Us", href: "/o-nama" },
   { text: "Contact", href: "/kontakt" },
+  { text: "Donate", href: "/doniraj" },
+  { text: "Book Now", href: "/book" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);

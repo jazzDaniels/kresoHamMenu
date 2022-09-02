@@ -1,3 +1,5 @@
+import Submit from "../components/Submit";
+
 export default function Kontakt() {
   return (
     <div className="w-screen h-screen bg-hero bg-no-repeat bg-center bg-scroll bg-auto -mb-12">
@@ -6,6 +8,7 @@ export default function Kontakt() {
           Kontaktirajte nas ako ste i vi prosijede pederčine
         </h6>
       </div>
+      <Submit />
     </div>
   );
 }

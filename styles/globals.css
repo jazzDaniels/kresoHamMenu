@@ -34,7 +34,7 @@ nav {
 .nav__menu-bar {
   display: flex;
   flex-direction: column;
-  row-gap: 6px;
+  row-gap: 2px;
   cursor: pointer;
 }
 .nav__menu-bar div {
@@ -50,7 +50,7 @@ nav {
   position: fixed;
   top: 60px;
   width: 288px;
-  row-gap: 24px;
+  row-gap: 14px;
   right: -288px;
   padding: 24px 16px;
   transition: all 0.2s;
