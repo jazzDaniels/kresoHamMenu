@@ -4,9 +4,9 @@ function Counter() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="bg-slate-300 container my-5 mt-0">
-      <div className="card text-center my-5">
-        <div className="card-body">
+    <div className="bg-slate-300 container mt-0">
+      <div className="card text-center">
+        <div className="card-body mt-3">
           <h1 className="text-2xl">
             Doniraj kune za <span className="text-slate-400">pituru</span>
           </h1>

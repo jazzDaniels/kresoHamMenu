@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../components/Card";
 export default function Naslovna() {
   return (
     <div className="bg-hero h-screen w-screen bg-no-repeat bg-center bg-scroll bg-auto -mb-12">
@@ -7,6 +8,7 @@ export default function Naslovna() {
           Dobrodošli u Kreško fan page
         </h6>
       </div>
+      <Card />
     </div>
   );
 }

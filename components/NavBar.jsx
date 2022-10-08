@@ -7,6 +7,7 @@ const MENU_LIST = [
   { text: "Contact", href: "/kontakt" },
   { text: "Donate", href: "/doniraj" },
   { text: "Book Now", href: "/book" },
+  { text: "Review Me", href: "/review" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);
