@@ -2,7 +2,7 @@ import Link from "next/link";
 const NavItem = ({ text, href, active }) => {
   return (
     <Link href={href}>
-      <div className="navItemCover bg-purple-200 h-10 align-text-bottom flex flex-col justify-center ml-1">
+      <div className="menuItem bg-transparent h-10 align-text-bottom flex flex-col justify-center ml-1">
         <a className={`nav__item ${active ? "active" : ""}`}>{text}</a>
       </div>
     </Link>

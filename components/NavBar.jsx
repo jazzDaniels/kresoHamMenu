@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavItem from "./NavItem";
-import { FaBars, GrClose } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 const MENU_LIST = [
   { text: "Home", href: "/" },
   { text: "About Us", href: "/o-nama" },
@@ -8,6 +8,7 @@ const MENU_LIST = [
   { text: "Donate", href: "/doniraj" },
   { text: "Book Now", href: "/book" },
   { text: "Review Me", href: "/review" },
+  { text: "Play a game", href: "/game" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);
@@ -15,7 +16,7 @@ const Navbar = () => {
 
   return (
     <header className="flex justify-end h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500 p-2">
-      <nav className="bg-red-200">
+      <nav className="bg-transparent">
         <div
           onClick={() => setNavActive(!navActive)}
           className={`nav__menu-bar`}

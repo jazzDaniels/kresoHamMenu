@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 .bg-hero {
   background-image: url(../public/images/kreso.jpg);
   opacity: 60%;
@@ -15,6 +21,7 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -55,7 +62,13 @@ nav {
   padding: 24px 16px;
   transition: all 0.2s;
   min-height: calc(100vh - 60px);
-  background-color: #f1f1f1;
+}
+
+.menuItem:hover {
+  font-size: 102%;
+  font-weight: bold;
+  transition: 0.3s;
+  border-bottom: 2px solid slateblue;
 }
 .nav__menu-list.active {
   right: 0;
@@ -70,12 +83,82 @@ nav {
   font-weight: bold;
 }
 
+/* GAME */
+.board {
+  width: 21.13rem;
+  height: 21.13rem;
+  margin: auto;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 7rem;
+  height: 7rem;
+  border: 1px solid black;
+}
+
+.square:hover {
+  background: lightblue;
+  cursor: pointer;
+}
 .center {
   min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.scoreboard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20rem;
+  font-size: 1.5rem;
+  background-color: white;
+  margin: 3rem auto;
+  box-shadow: 0px 0px 8px #888888;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.score {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+.x-score {
+  color: rgb(255, 70, 37);
+  border-bottom: 5px solid rgb(255, 70, 37);
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.o-score {
+  color: rgb(44, 135, 255);
+  border-bottom: 5px solid rgb(44, 135, 255);
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+
+.inactive {
+  border-bottom: 5px solid transparent;
+}
+.reset-btn {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 110, 255);
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 2rem auto;
+  display: block;
+}
+
+.reset-btn:hover {
+  background-color: rgb(0, 119, 255);
+}
+
 @media screen and (min-width: 768px) {
   .nav__menu-bar {
     display: none;
@@ -101,5 +184,11 @@ nav {
 
   .nav__link:hover:before {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav__menu-list {
+    background-color: bisque;
   }
 }

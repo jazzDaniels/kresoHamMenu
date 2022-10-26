@@ -24,7 +24,7 @@ export default function Review() {
 
   return (
     <div>
-      <h1>NextJs ToDoList</h1>
+      <h1>To do list</h1>
       <form>
         <input type="text" value={userInput} onChange={handleChange} />
         <button
@@ -52,7 +52,7 @@ export default function Review() {
                 </li>
               );
             })
-          : "Enter a todo item"}
+          : "Enter a review"}
       </ul>
     </div>
   );

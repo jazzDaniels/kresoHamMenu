@@ -36,7 +36,7 @@ export default function Submit() {
               id="name"
               name="name"
               type="text"
-              autoComplete="name"
+              autoComplete="email"
               required
             />
 
