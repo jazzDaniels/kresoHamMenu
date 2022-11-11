@@ -5,7 +5,7 @@ export default function Layout(props) {
   return (
     <div className="flex flex-col bg-slate-200">
       <Navbar />
-      <main>{props.children}</main>
+      <main className="flex flex-col min-h-screen">{props.children}</main>
       <Footer />
     </div>
   );

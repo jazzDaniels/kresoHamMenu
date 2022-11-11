@@ -9,11 +9,9 @@ html,
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 .bg-hero {
   background-image: url(../public/images/kreso.jpg);
-  opacity: 60%;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
@@ -170,6 +168,34 @@ nav {
 
 .box:hover {
   box-shadow: 0px 0px 15px #888888;
+}
+
+/* CALCULATOR */
+
+.keypad button {
+  width: 91px;
+  height: 82px;
+  --tw-shadow-color: #1f2937;
+  font-size: 35px;
+}
+
+.keypad button:hover {
+  background-color: rgb(107 114 128);
+  color: rgb(217, 216, 216);
+  font-weight: bold;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.keypad {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  border: 1px solid red;
+}
+
+.C_button {
+  background-color: red;
 }
 
 @media screen and (min-width: 768px) {

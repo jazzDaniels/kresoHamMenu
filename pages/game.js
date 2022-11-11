@@ -1,8 +1,8 @@
-import  App from "../components/App.js";
+import App from "../components/App.js";
 
 export default function TicTacToe() {
   return (
-    <div>
+    <div className="bg-slate-400">
       <App />
     </div>
   );

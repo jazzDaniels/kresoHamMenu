@@ -9,6 +9,7 @@ const MENU_LIST = [
   { text: "Book Now", href: "/book" },
   { text: "Review Me", href: "/review" },
   { text: "Play a game", href: "/game" },
+  { text: "Calculator", href: "/calculator" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);
